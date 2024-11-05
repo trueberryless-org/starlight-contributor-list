@@ -1,32 +1,33 @@
 {
-  "name": "starlight-contributor-list-docs",
-  "version": "0.0.1",
-  "license": "MIT",
-  "description": "Display a list of all contributors to your project",
-  "author": "trueberryless-org",
-  "type": "module",
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "@astrojs/starlight": "^0.28.6",
-    "astro": "^4.16.9",
-    "sharp": "^0.33.5",
-    "starlight-contributor-list": "workspace:*"
-  },
-  "engines": {
-    "node": "^18.17.1 || ^20.3.0 || >=21.0.0"
-  },
-  "private": true,
-  "homepage": "https://github.com/trueberryless-org/starlight-contributor-list",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/trueberryless-org/starlight-contributor-list.git",
-    "directory": "docs"
-  },
-  "bugs": "https://github.com/trueberryless-org/starlight-contributor-list/issues"
+    "name": "starlight-contributor-list-docs",
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "Display a list of all contributors to your project",
+    "author": "trueberryless-org",
+    "type": "module",
+    "scripts": {
+        "dev": "astro dev",
+        "start": "astro dev",
+        "build": "astro build",
+        "preview": "astro preview",
+        "astro": "astro"
+    },
+    "dependencies": {
+        "@astrojs/starlight": "^0.28.6",
+        "astro": "^4.16.9",
+        "sharp": "^0.33.5",
+        "starlight-contributor-list": "workspace:*"
+    },
+    "engines": {
+        "node": "^18.17.1 || ^20.3.0 || >=21.0.0"
+    },
+    "packageManager": "pnpm@9.3.0",
+    "private": true,
+    "homepage": "https://github.com/trueberryless-org/starlight-contributor-list",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/trueberryless-org/starlight-contributor-list.git",
+        "directory": "docs"
+    },
+    "bugs": "https://github.com/trueberryless-org/starlight-contributor-list/issues"
 }

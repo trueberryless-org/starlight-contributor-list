@@ -2,7 +2,7 @@
 title: Getting Started
 ---
 
-Display a list of all contributors to your project
+Display a list of all contributors to your project.
 
 ## Prerequisites
 
@@ -11,58 +11,88 @@ If you don't have one yet, you can follow the ["Getting Started"](https://starli
 
 ## Installation
 
-import { Steps, Tabs, TabItem } from '@astrojs/starlight/components'
+import { Steps, Tabs, TabItem } from "@astrojs/starlight/components";
 
 <Steps>
 
+1. Configure the `PUBLIC_GITHUB_TOKEN` environment variable in your [GitHub Secrets](https://docs.github.com/en/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions).
+
 1. `starlight-contributor-list` is a Starlight [plugin](https://starlight.astro.build/reference/plugins/). Install it by running the following command in your terminal:
 
-   <Tabs syncKey="pkg">
+    <Tabs syncKey="pkg">
 
-   <TabItem label="npm">
+    <TabItem label="npm">
 
-   ```sh
-   npm install starlight-contributor-list
-   ```
+    ```sh
+    npm install starlight-contributor-list
+    ```
 
-   </TabItem>
+    </TabItem>
 
-   <TabItem label="pnpm">
+    <TabItem label="pnpm">
 
-   ```sh
-   pnpm add starlight-contributor-list
-   ```
+    ```sh
+    pnpm add starlight-contributor-list
+    ```
 
-   </TabItem>
+    </TabItem>
 
-   <TabItem label="Yarn">
+    <TabItem label="Yarn">
 
-   ```sh
-   yarn add starlight-contributor-list
-   ```
+    ```sh
+    yarn add starlight-contributor-list
+    ```
 
-   </TabItem>
+    </TabItem>
 
-   </Tabs>
+    </Tabs>
 
-2. Configure the plugin in your Starlight [configuration](https://starlight.astro.build/reference/configuration/#plugins) in the `astro.config.mjs` file.
+1. In any `.mdx` or `.astro` file, import the `ContributorList` component by adding the following import statement:
 
-   ```diff lang="js"
-   // astro.config.mjs
-   import starlight from '@astrojs/starlight'
-   import { defineConfig } from 'astro/config'
-   +import starlightContributorList from 'starlight-contributor-list'
+    <Tabs syncKey="file">
 
-   export default defineConfig({
-     integrations: [
-       starlight({
-   +      plugins: [starlightContributorList()],
-         title: 'My Docs',
-       }),
-     ],
-   })
-   ```
+    <TabItem label="mdx">
 
-3. [Start the development server](https://starlight.astro.build/getting-started/#start-the-development-server) to preview the plugin in action.
+    ```mdx
+    import { ContributorList } from "starlight-contributor-list";
+    ```
+
+    </TabItem>
+
+    <TabItem label="astro">
+
+    ```astro
+    ---
+    import { ContributorList } from "starlight-contributor-list"
+    ---
+    ```
+
+    </TabItem>
+
+    </Tabs>
+
+1. Now you can use the `ContributorList` component within this file:
+
+    <Tabs syncKey="file">
+
+    <TabItem label="mdx">
+
+    ```mdx
+    <ContributorList githubRepo="trueberryless-org/mutanuq" />
+    ```
+
+    </TabItem>
+
+    <TabItem label="astro">
+
+    ```astro
+    <ContributorList githubRepo="trueberryless-org/mutanuq" />
+    ```
+
+    </TabItem>
+
+    </Tabs>
+
+1. [Start the development server](https://starlight.astro.build/getting-started/#start-the-development-server) to preview the plugin in action.
 
 </Steps>

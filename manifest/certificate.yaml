@@ -1,0 +1,12 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+    name: starlight-contributor-list
+    namespace: starlight-contributor-list
+spec:
+    secretName: starlight-contributor-list
+    issuerRef:
+        name: acme-issuer
+        kind: ClusterIssuer
+    dnsNames:
+        - "starlight-contributor-list.trueberryless.org"
