@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-    name: starlight-contributor-list
-    namespace: starlight-contributor-list
-    labels:
-        app: starlight-contributor-list
+  name: starlight-contributor-list
+  namespace: starlight-contributor-list
+  labels:
+    app: starlight-contributor-list
 spec:
-    replicas: 3
-    selector:
-        matchLabels:
-            app: starlight-contributor-list
-    template:
-        metadata:
-            labels:
-                app: starlight-contributor-list
-        spec:
-            containers:
-                - name: starlight-contributor-list
-                  image: "trueberryless/starlight-contributor-list:main-3c0d0e5f2393c5a09089851ec7b601d5077f128e"
-                  imagePullPolicy: Always
+  replicas: 3
+  selector:
+    matchLabels:
+      app: starlight-contributor-list
+  template:
+    metadata:
+      labels:
+        app: starlight-contributor-list
+    spec:
+      containers:
+        - name: starlight-contributor-list
+          image: "trueberryless/starlight-contributor-list:main-fcb3ada94fbca4032179fc23a9f52dfcfd0289bd"
+          imagePullPolicy: Always
