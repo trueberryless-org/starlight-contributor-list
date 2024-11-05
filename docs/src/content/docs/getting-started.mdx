@@ -9,17 +9,17 @@ Display a list of all contributors to your project.
 You will need to have a Starlight website set up.
 If you don't have one yet, you can follow the ["Getting Started"](https://starlight.astro.build/getting-started) guide in the Starlight docs to create one.
 
+:::note
+If your repository is **private**, you need to configure the `PUBLIC_GITHUB_TOKEN` environment variable in your [GitHub Secrets](https://docs.github.com/en/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions). If the repository is public, you can skip this step.
+:::
+
 ## Installation
 
 import { Steps, Tabs, TabItem } from "@astrojs/starlight/components";
 
 <Steps>
 
-1. :::note
-   If your repository is **private**, you need to configure the `PUBLIC_GITHUB_TOKEN` environment variable in your [GitHub Secrets](https://docs.github.com/en/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions). If the repository is public, you can skip this step.
-   :::
-
-2. `starlight-contributor-list` is a Starlight [plugin](https://starlight.astro.build/reference/plugins/). Install it by running the following command in your terminal:
+1.  `starlight-contributor-list` is a Starlight [plugin](https://starlight.astro.build/reference/plugins/). Install it by running the following command in your terminal:
 
     <Tabs syncKey="pkg">
 
@@ -49,7 +49,7 @@ import { Steps, Tabs, TabItem } from "@astrojs/starlight/components";
 
     </Tabs>
 
-3. In any `.mdx` or `.astro` file, import the `ContributorList` component by adding the following import statement:
+2.  In any `.mdx` or `.astro` file, import the `ContributorList` component by adding the following import statement:
 
     <Tabs syncKey="file">
 
@@ -73,7 +73,7 @@ import { Steps, Tabs, TabItem } from "@astrojs/starlight/components";
 
     </Tabs>
 
-4. Now you can use the `ContributorList` component within this file:
+3.  Now you can use the `ContributorList` component within this file:
 
     <Tabs syncKey="file">
 
@@ -95,6 +95,6 @@ import { Steps, Tabs, TabItem } from "@astrojs/starlight/components";
 
     </Tabs>
 
-5. [Start the development server](https://starlight.astro.build/getting-started/#start-the-development-server) to preview the plugin in action.
+4.  [Start the development server](https://starlight.astro.build/getting-started/#start-the-development-server) to preview the plugin in action.
 
 </Steps>
