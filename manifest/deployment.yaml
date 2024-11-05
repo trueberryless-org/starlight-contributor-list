@@ -17,5 +17,5 @@ spec:
     spec:
       containers:
         - name: starlight-contributor-list
-          image: "trueberryless/starlight-contributor-list:main-6ebaf097a385ec1a14821d69c21d35e29574c761"
+          image: "trueberryless/starlight-contributor-list:main-4be223397a619c293e26e5e87e54926e1330dc13"
           imagePullPolicy: Always
