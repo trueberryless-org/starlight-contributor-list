@@ -5,9 +5,11 @@ import starlightPluginsDocsComponents from "@trueberryless-org/starlight-plugins
 export default defineConfig({
     integrations: [
         starlight({
-            title: "SCL",
+            title: "Starlight Contributor List",
             logo: {
-                src: "./src/assets/logo.png",
+                light: "./src/assets/logo-light.png",
+                dark: "./src/assets/logo-dark.png",
+                replacesTitle: true,
             },
             editLink: {
                 baseUrl:
