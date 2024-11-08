@@ -1,9 +1,14 @@
 import starlight from "@astrojs/starlight";
 import { defineConfig } from "astro/config";
+import starlightPluginsDocsComponents from "@trueberryless-org/starlight-plugins-docs-components";
 
 export default defineConfig({
     integrations: [
         starlight({
+            title: "SCL",
+            logo: {
+                src: "./src/assets/logo.png",
+            },
             editLink: {
                 baseUrl:
                     "https://github.com/trueberryless-org/starlight-contributor-list/edit/main/docs/",
@@ -18,7 +23,11 @@ export default defineConfig({
             social: {
                 github: "https://github.com/trueberryless-org/starlight-contributor-list",
             },
-            title: "Starlight Contributor List",
+            plugins: [
+                starlightPluginsDocsComponents({
+                    pluginName: "starlight-contributor-list",
+                }),
+            ],
         }),
     ],
 });
