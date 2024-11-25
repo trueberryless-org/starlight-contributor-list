@@ -1,22 +1,22 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-    name: starlight-contributor-list
-    namespace: starlight-contributor-list
+  name: starlight-contributor-list
+  namespace: starlight-contributor-list
 spec:
-    rules:
-        - host: starlight-contributor-list.trueberryless.org
-          http:
-              paths:
-                  - path: /
-                    pathType: Prefix
-                    backend:
-                        service:
-                            name: starlight-contributor-list
-                            port:
-                                number: 80
+  rules:
+    - host: starlight-contributor-list.trueberryless.org
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: starlight-contributor-list
+                port:
+                  number: 80
 
-    tls:
-        - hosts:
-              - starlight-contributor-list.trueberryless.org
-          secretName: starlight-contributor-list
+  tls:
+    - hosts:
+        - starlight-contributor-list.trueberryless.org
+      secretName: starlight-contributor-list
