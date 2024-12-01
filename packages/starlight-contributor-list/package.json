@@ -1,35 +1,35 @@
 {
-    "name": "starlight-contributor-list",
-    "version": "0.1.0",
-    "license": "MIT",
-    "description": "Display a list of all contributors to your project",
-    "author": "trueberryless-org",
-    "type": "module",
-    "exports": {
-        ".": "./index.ts",
-        "./package.json": "./package.json"
-    },
-    "devDependencies": {
-        "@astrojs/starlight": "^0.28.6",
-        "astro": "^4.16.9"
-    },
-    "peerDependencies": {
-        "@astrojs/starlight": ">=0.28"
-    },
-    "engines": {
-        "node": "^18.17.1 || ^20.3.0 || >=21.0.0"
-    },
-    "publishConfig": {
-        "access": "public"
-    },
-    "homepage": "https://github.com/trueberryless-org/starlight-contributor-list",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/trueberryless-org/starlight-contributor-list.git",
-        "directory": "packages/starlight-contributor-list"
-    },
-    "bugs": "https://github.com/trueberryless-org/starlight-contributor-list/issues",
-    "dependencies": {
-        "@11ty/eleventy-fetch": "^4.0.1"
-    }
+  "name": "starlight-contributor-list",
+  "version": "0.1.0",
+  "description": "Display a list of all contributors to your project",
+  "homepage": "https://github.com/trueberryless-org/starlight-contributor-list",
+  "bugs": "https://github.com/trueberryless-org/starlight-contributor-list/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trueberryless-org/starlight-contributor-list.git",
+    "directory": "packages/starlight-contributor-list"
+  },
+  "license": "MIT",
+  "author": "trueberryless-org",
+  "type": "module",
+  "exports": {
+    ".": "./index.ts",
+    "./package.json": "./package.json"
+  },
+  "dependencies": {
+    "@11ty/eleventy-fetch": "^4.0.1"
+  },
+  "devDependencies": {
+    "@astrojs/starlight": "^0.28.6",
+    "astro": "^4.16.9"
+  },
+  "peerDependencies": {
+    "@astrojs/starlight": ">=0.28"
+  },
+  "engines": {
+    "node": "^18.17.1 || ^20.3.0 || >=21.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }
