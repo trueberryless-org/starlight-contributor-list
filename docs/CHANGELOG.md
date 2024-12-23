@@ -1,5 +1,11 @@
 # starlight-contributor-list-docs
 
+## 0.2.1
+
+### Patch Changes
+
+- [#12](https://github.com/trueberryless-org/starlight-contributor-list/pull/12) [`f4752b4`](https://github.com/trueberryless-org/starlight-contributor-list/commit/f4752b4c3314fd4df374a3f7226cddc328ac53fb) Thanks [@trueberryless](https://github.com/trueberryless)! - Add Starlight Plugin Show Latest Version
+
 ## 0.2.0
 
 ### Minor Changes

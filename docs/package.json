@@ -1,6 +1,6 @@
 {
   "name": "starlight-contributor-list-docs",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": true,
   "description": "Display a list of all contributors to your project",
   "homepage": "https://github.com/trueberryless-org/starlight-contributor-list",
