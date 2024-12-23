@@ -25,7 +25,8 @@
     "@trueberryless-org/starlight-plugins-docs-components": "^0.2.2",
     "astro": "^5.1.1",
     "sharp": "^0.33.5",
-    "starlight-contributor-list": "workspace:*"
+    "starlight-contributor-list": "workspace:*",
+    "starlight-plugin-show-latest-version": "^0.2.0"
   },
   "packageManager": "pnpm@9.3.0",
   "engines": {
