@@ -1,5 +1,11 @@
 # starlight-contributor-list
 
+## 0.2.1
+
+### Patch Changes
+
+- [#19](https://github.com/trueberryless-org/starlight-contributor-list/pull/19) [`4f439a3`](https://github.com/trueberryless-org/starlight-contributor-list/commit/4f439a38bed4c3bbdde1891c65c37066fa033363) Thanks [@trueberryless](https://github.com/trueberryless)! - Update to Starlight 0.32
+
 ## 0.2.0
 
 ### Minor Changes

@@ -1,5 +1,12 @@
 # starlight-contributor-list-docs
 
+## 0.2.2
+
+### Patch Changes
+
+- Updated dependencies [[`4f439a3`](https://github.com/trueberryless-org/starlight-contributor-list/commit/4f439a38bed4c3bbdde1891c65c37066fa033363)]:
+  - starlight-contributor-list@0.2.1
+
 ## 0.2.1
 
 ### Patch Changes
