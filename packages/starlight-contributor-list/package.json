@@ -20,11 +20,11 @@
     "@11ty/eleventy-fetch": "^4.0.1"
   },
   "devDependencies": {
-    "@astrojs/starlight": "^0.30.3",
-    "astro": "^5.1.1"
+    "@astrojs/starlight": "^0.32.0",
+    "astro": "^5.3.0"
   },
   "peerDependencies": {
-    "@astrojs/starlight": ">=0.30"
+    "@astrojs/starlight": ">=0.32"
   },
   "engines": {
     "node": "^18.17.1 || ^20.3.0 || >=21.0.0"
