@@ -1,0 +1,30 @@
+---
+title: Parameters
+---
+
+The `ContributorList` component supports the following parameters:
+
+## `githubRepo`
+
+**Type**: `${string}/${string}`  
+**Required** 
+
+Define the GitHub repository to fetch contributors from in the format `owner/repo`.
+
+```mdx
+<ContributorList githubRepo="trueberryless-org/mutanuq" />
+```
+
+## `ignore`
+
+**Type**: `string[]`  
+**Required** 
+
+An array of GitHub usernames to ignore when fetching contributors.
+This feature is very useful if you have a bot account that you don't want to display.
+
+```mdx wrap
+<ContributorList githubRepo="trueberryless-org/mutanuq" ignore={["autofix-ci[bot]", "github-actions[bot]"]} />
+```
+
+See exactly these two examples in the [demo](/demo).
