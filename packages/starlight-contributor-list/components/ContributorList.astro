@@ -4,11 +4,12 @@ import FacePile from './FacePile.astro';
 
 export interface Props {
 	githubRepo?: `${string}/${string}`;
+  ignore?: string[]
 }
 
-const { githubRepo = 'withastro/docs' } = Astro.props as Props;
+const { githubRepo = 'withastro/docs', ignore } = Astro.props as Props;
 
-const contributors = await getAllContributors(githubRepo);
+const contributors = await getAllContributors(githubRepo, ignore);
 ---
 
 <FacePile {contributors} />
