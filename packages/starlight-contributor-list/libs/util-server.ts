@@ -2,7 +2,6 @@
 	This file contains server-side utilities using features that don't work in a browser.
 	Do not import this file from a hydrated client-side component.
 */
-
 // @ts-expect-error Package without types we can’t do anything about.
 import EleventyFetch from "@11ty/eleventy-fetch";
 
