@@ -1,6 +1,6 @@
 import starlight from "@astrojs/starlight";
-import { defineConfig } from "astro/config";
 import starlightPluginsDocsComponents from "@trueberryless-org/starlight-plugins-docs-components";
+import { defineConfig } from "astro/config";
 import starlightPluginShowLatestVersion from "starlight-plugin-show-latest-version";
 
 export default defineConfig({
