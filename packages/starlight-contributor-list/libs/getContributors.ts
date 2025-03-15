@@ -68,7 +68,7 @@ export async function getAllContributors(repo: string, ignore: string[] = []) {
   const endpoint = `repos/${repo}/contributors`;
   const contributors: Contributor[] = await recursiveFetch(endpoint);
 
-  return contributors.filter(({ login }) => !ignore.includes(login));;
+  return contributors.filter(({ login }) => !ignore.includes(login));
 }
 
 export async function getTranslationContributors(
