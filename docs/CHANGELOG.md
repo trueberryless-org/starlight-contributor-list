@@ -1,5 +1,16 @@
 # starlight-contributor-list-docs
 
+## 0.3.0
+
+### Minor Changes
+
+- [#24](https://github.com/trueberryless-org/starlight-contributor-list/pull/24) [`368e54d`](https://github.com/trueberryless-org/starlight-contributor-list/commit/368e54d14c5277bbfce227f835715532bd5067c8) Thanks [@trueberryless](https://github.com/trueberryless)! - Update documentation with `ignore` parameter option
+
+### Patch Changes
+
+- Updated dependencies [[`368e54d`](https://github.com/trueberryless-org/starlight-contributor-list/commit/368e54d14c5277bbfce227f835715532bd5067c8)]:
+  - starlight-contributor-list@0.3.0
+
 ## 0.2.2
 
 ### Patch Changes
