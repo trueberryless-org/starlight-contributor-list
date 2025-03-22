@@ -2,6 +2,8 @@
 
 Display a list of all contributors to your project
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1c865422-4bef-4dc0-8451-c932c2a47fbc/deploy-status)](https://app.netlify.com/sites/starlight-contributor-list/deploys)
+
 ## Package
 
 If you are looking for the Starlight plugin package, you can find it in the [`packages/starlight-contributor-list/`](/packages/starlight-contributor-list/) directory.
