@@ -1,5 +1,11 @@
 # starlight-contributor-list-docs
 
+## 0.3.1
+
+### Patch Changes
+
+- [#27](https://github.com/trueberryless-org/starlight-contributor-list/pull/27) [`f2d836a`](https://github.com/trueberryless-org/starlight-contributor-list/commit/f2d836a4b97a020e47837e4fb357272d9e18b026) Thanks [@trueberryless](https://github.com/trueberryless)! - Remove all manual deployment files, transition to Netlify
+
 ## 0.3.0
 
 ### Minor Changes
