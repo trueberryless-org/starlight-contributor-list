@@ -41,9 +41,6 @@ importers:
       starlight-contributor-list:
         specifier: workspace:*
         version: link:../packages/starlight-contributor-list
-      starlight-plugin-show-latest-version:
-        specifier: ^0.2.0
-        version: 0.2.0(@astrojs/starlight@0.32.0(astro@5.3.0(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3)))
 
   packages/starlight-contributor-list:
     dependencies:
@@ -2058,12 +2055,6 @@ packages:
     peerDependencies:
       '@astrojs/starlight': '>=0.22.0'
       astro: '>=4.2.7'
-
-  starlight-plugin-show-latest-version@0.2.0:
-    resolution: {integrity: sha512-isJafUbOIL6IjH0YhbWPhEAnKj4Q32hdfd7scUP2RAH0LknejNqk90oChfBQMB6rmlnb6n4qO7b8823LyZpn5Q==}
-    engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0}
-    peerDependencies:
-      '@astrojs/starlight': '>=0.30'
 
   starlight-showcases@0.1.2:
     resolution: {integrity: sha512-yj3RjcdWLIWdehTjne9Ethd3ff95vMbuVx/87lU4yilTQewQxjnAyOf1KSnGUgTMQT5WTqhDw8LciPBJox+b8Q==}
@@ -5077,10 +5068,6 @@ snapshots:
     dependencies:
       '@astrojs/starlight': 0.32.0(astro@5.3.0(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3))
       astro: 5.3.0(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3)
-
-  starlight-plugin-show-latest-version@0.2.0(@astrojs/starlight@0.32.0(astro@5.3.0(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3))):
-    dependencies:
-      '@astrojs/starlight': 0.32.0(astro@5.3.0(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3))
 
   starlight-showcases@0.1.2(@astrojs/starlight@0.32.0(astro@5.3.0(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3)))(astro@5.3.0(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3)):
     dependencies:
