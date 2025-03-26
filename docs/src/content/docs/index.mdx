@@ -29,3 +29,10 @@ import { Card, CardGrid } from "@astrojs/starlight/components";
         Use the `ContributorList` component to display a list of all contributors to your project.
     </Card>
 </CardGrid>
+
+
+## Contributors
+
+import { ContributorList } from "starlight-contributor-list";
+
+<ContributorList githubRepo="trueberryless-org/starlight-contributor-list" ignore={["autofix-ci[bot]", "github-actions[bot]", "renovate[bot]"]} />
