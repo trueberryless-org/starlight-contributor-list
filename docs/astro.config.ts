@@ -26,10 +26,13 @@ export default defineConfig({
           ],
         },
       ],
-      social: {
-        github:
-          "https://github.com/trueberryless-org/starlight-contributor-list",
-      },
+      social: [
+        {
+          icon: "github",
+          label: "GitHub",
+          href: "https://github.com/trueberryless-org/starlight-contributor-list",
+        },
+      ],
       plugins: [
         starlightPluginsDocsComponents({
           pluginName: "starlight-contributor-list",
