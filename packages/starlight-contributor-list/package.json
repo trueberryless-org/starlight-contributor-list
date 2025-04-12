@@ -3,14 +3,16 @@
   "version": "0.3.0",
   "description": "Display a list of all contributors to your project",
   "homepage": "https://github.com/trueberryless-org/starlight-contributor-list",
-  "bugs": "https://github.com/trueberryless-org/starlight-contributor-list/issues",
+  "bugs": {
+    "url": "https://github.com/trueberryless-org/starlight-contributor-list/issues"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/trueberryless-org/starlight-contributor-list.git",
     "directory": "packages/starlight-contributor-list"
   },
   "license": "MIT",
-  "author": "trueberryless-org",
+  "author": "trueberryless <trueberryless@gmail.com> (https://trueberryless.org)",
   "type": "module",
   "exports": {
     ".": "./index.ts",
