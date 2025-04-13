@@ -1,0 +1,107 @@
+---
+title: All Contributors RC
+---
+
+The Starlight Contributor List plugin also supports the [All Contributors](https://allcontributors.org/) specification.
+
+## Prerequisites
+
+import { FileTree } from "@astrojs/starlight/components";
+
+You will need to have a [valid `.all-contributorsrc` file](https://allcontributors.org/docs/en/bot/configuration) located on the **same level** as your `astro.config.mjs` file.
+
+<FileTree>
+
+- **.all-contributorsrc**
+- astro.config.mjs
+- package.json
+- README.md
+- src/
+  - content.config.ts
+  - content/
+
+</FileTree>
+
+:::caution[Be aware]
+The Starlight Contributor List plugin takes control over the following properties in order to handle a responsive layout and correct integration with Starlight:
+
+- `files`
+- `imageSize`
+- `contributorsPerLine`
+
+Since the manipulation of those fields is temporary, you can still configure everything how you please in order to display your contributors in other `files`, e.g. `README.md`.
+:::
+
+## Setup
+
+import { Steps, Tabs, TabItem } from "@astrojs/starlight/components";
+
+<Steps>
+
+1. Configure the plugin in your Starlight [configuration](https://starlight.astro.build/reference/configuration/#plugins) in the `astro.config.mjs` file.
+
+   ```diff lang="js"
+   // astro.config.mjs
+   import starlight from '@astrojs/starlight'
+   import { defineConfig } from 'astro/config'
+   +import starlightContributorList from 'starlight-contributor-list'
+
+   export default defineConfig({
+     integrations: [
+       starlight({
+   +      plugins: [starlightContributorList()],
+         title: 'My Docs',
+       }),
+     ],
+   })
+   ```
+
+2.  In any `.mdx` or `.astro` file, import the `AllContributorsRC` component by adding the following import statement:
+
+    <Tabs syncKey="file">
+
+    <TabItem label="mdx">
+
+    ```mdx
+    import AllContributorsRC from "starlight-contributor-list/components/AllContributorsRC.astro";
+    ```
+
+    </TabItem>
+
+    <TabItem label="astro">
+
+    ```astro
+    ---
+    import AllContributorsRC from "starlight-contributor-list/components/AllContributorsRC.astro";
+    ---
+    ```
+
+    </TabItem>
+
+    </Tabs>
+
+3.  Now you can use the `AllContributorsRC` component within this file:
+
+    <Tabs syncKey="file">
+
+    <TabItem label="mdx">
+
+    ```mdx
+    <AllContributorsRC />
+    ```
+
+    </TabItem>
+
+    <TabItem label="astro">
+
+    ```astro
+    <AllContributorsRC />
+    ```
+
+    </TabItem>
+
+    </Tabs>
+
+4.  [Start the development server](https://starlight.astro.build/getting-started/#start-the-development-server) to preview the plugin in action.
+
+</Steps>
