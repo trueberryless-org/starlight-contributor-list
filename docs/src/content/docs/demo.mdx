@@ -2,12 +2,49 @@
 title: Demo
 ---
 
-import { ContributorList } from "starlight-contributor-list";
+import { Preview } from "@hideoo/starlight-plugins-docs-components";
+
+## `ContributorList`
+
+import ContributorList from "starlight-contributor-list/components/ContributorList.astro";
 
 These are all contributors to the [Mutanuq](https://github.com/trueberryless-org/mutanuq) project.
 
+<Preview>
+
+```mdx wrap
+import ContributorList from "starlight-contributor-list/components/ContributorList.astro";
 <ContributorList githubRepo="trueberryless-org/mutanuq" />
+```
+
+<ContributorList githubRepo="trueberryless-org/mutanuq" slot="preview" />
+
+</Preview>
 
 And here you have all human contributors to the [Mutanuq](https://github.com/trueberryless-org/mutanuq) project (bots are ignored):
 
+<Preview>
+
+```mdx wrap
+import ContributorList from "starlight-contributor-list/components/ContributorList.astro";
 <ContributorList githubRepo="trueberryless-org/mutanuq" ignore={["autofix-ci[bot]", "github-actions[bot]"]} />
+```
+
+<ContributorList githubRepo="trueberryless-org/mutanuq" ignore={["autofix-ci[bot]", "github-actions[bot]"]} slot="preview" />
+
+</Preview>
+
+## `AllContributorsRC`
+
+import AllContributorsRC from "starlight-contributor-list/components/AllContributorsRC.astro";
+
+<Preview>
+
+```mdx wrap
+import AllContributorsRC from "starlight-contributor-list/components/AllContributorsRC.astro";
+<AllContributorsRC />
+```
+
+<AllContributorsRC slot="preview" />
+
+</Preview>

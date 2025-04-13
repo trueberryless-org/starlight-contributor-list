@@ -1,6 +1,7 @@
 import starlight from "@astrojs/starlight";
 import starlightPluginsDocsComponents from "@trueberryless-org/starlight-plugins-docs-components";
 import { defineConfig } from "astro/config";
+import starlightContributorList from "starlight-contributor-list";
 
 export default defineConfig({
   integrations: [
@@ -22,6 +23,7 @@ export default defineConfig({
           items: [
             { slug: "getting-started" },
             { slug: "parameters" },
+            { slug: "all-contributorsrc" },
             { slug: "demo" },
           ],
         },
@@ -34,6 +36,7 @@ export default defineConfig({
         },
       ],
       plugins: [
+        starlightContributorList(),
         starlightPluginsDocsComponents({
           pluginName: "starlight-contributor-list",
         }),
