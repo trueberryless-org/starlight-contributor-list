@@ -30,8 +30,8 @@ importers:
         specifier: ^0.33.0
         version: 0.33.0(astro@5.6.1(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3))
       '@trueberryless-org/starlight-plugins-docs-components':
-        specifier: ^0.2.2
-        version: 0.2.2(@astrojs/starlight@0.33.0(astro@5.6.1(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3)))(astro@5.6.1(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3))
+        specifier: ^0.4.2
+        version: 0.4.2(@astrojs/starlight@0.33.0(astro@5.6.1(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3)))(astro@5.6.1(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3))
       astro:
         specifier: ^5.6.1
         version: 5.6.1(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3)
@@ -378,11 +378,11 @@ packages:
   '@expressive-code/plugin-text-markers@0.40.2':
     resolution: {integrity: sha512-/XoLjD67K9nfM4TgDlXAExzMJp6ewFKxNpfUw4F7q5Ecy+IU3/9zQQG/O70Zy+RxYTwKGw2MA9kd7yelsxnSmw==}
 
-  '@hideoo/starlight-plugins-docs-components@0.2.2':
-    resolution: {integrity: sha512-SJUoeDvdMLgETbYn2GPXI4IDy7l2kWcfA458M4a4a6kAtTAIdguRTDgqNjPAuCyV9s74VDdKLPh3KCUvUTfBGg==}
+  '@hideoo/starlight-plugins-docs-components@0.4.0':
+    resolution: {integrity: sha512-MbpFyLriouQVxyDmyq5Gaa1TIrFrJm3krR8QwPIbhEOVtJIf0Xi85gJAYQgt8uBH8ul98foq0sSsIAp5MWIkAQ==}
     engines: {node: '>=18'}
     peerDependencies:
-      '@astrojs/starlight': '>=0.24.0'
+      '@astrojs/starlight': '>=0.30.0'
 
   '@img/sharp-darwin-arm64@0.33.5':
     resolution: {integrity: sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ==}
@@ -718,11 +718,11 @@ packages:
       svelte:
         optional: true
 
-  '@trueberryless-org/starlight-plugins-docs-components@0.2.2':
-    resolution: {integrity: sha512-YVm+mJl8UXWiA91tacgNG/PH3X/WwPchD71K1Q3mz8B2friHjPBbr2X8kXqp04coX0pDk96/muuRccG8lqp7tg==}
+  '@trueberryless-org/starlight-plugins-docs-components@0.4.2':
+    resolution: {integrity: sha512-21+ohQXAcOgkWfaoVTN69LZVP4gqjcBFd9/lVfGKjL2rpPi45lvdg+mUb3PX9tFA6M/Rdk6JFOajGSQ/7Pws9Q==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0}
     peerDependencies:
-      '@astrojs/starlight': '>=0.28'
+      '@astrojs/starlight': '>=0.32'
 
   '@types/acorn@4.0.6':
     resolution: {integrity: sha512-veQTnWP+1D/xbxVrPC3zHnCZRjSrKfhbMUlEA43iMZLu7EsnTtkJklIuwrCPbOi8YkvDQAiW05VQQFvvz9oieQ==}
@@ -2047,24 +2047,23 @@ packages:
   sprintf-js@1.0.3:
     resolution: {integrity: sha512-D9cPgkvLlV3t3IzL0D0YLvGA9Ahk4PcvVwUbN0dSGr1aP0Nrt4AEnTUbuGvquEC0mA64Gqt1fzirlRs5ibXx8g==}
 
-  starlight-package-managers@0.6.0:
-    resolution: {integrity: sha512-2tE0B4ZVEZXZ1LJjcSvVXLfJP8SB2nE+nhiFgSa3fuHUPtnbzmFxLVp7jEKD8jaMXKWPYtlNTy95gJSK9W1sbQ==}
-    engines: {node: '>=18.14.1'}
+  starlight-package-managers@0.8.1:
+    resolution: {integrity: sha512-a+zGIOdbN7B4T/VaszuvW8585Aau4LSU8HlVCmBCJJwxkrGAUC9lRya4y0md5tOAFyW/gfhUNJZM8qqyMNTe7Q==}
+    engines: {node: '>=18.17.1'}
     peerDependencies:
       '@astrojs/starlight': '>=0.22.0'
-      astro: '>=4.2.7'
-
-  starlight-showcases@0.1.2:
-    resolution: {integrity: sha512-yj3RjcdWLIWdehTjne9Ethd3ff95vMbuVx/87lU4yilTQewQxjnAyOf1KSnGUgTMQT5WTqhDw8LciPBJox+b8Q==}
-    engines: {node: '>=18'}
-    peerDependencies:
-      '@astrojs/starlight': '>=0.23.0'
 
   starlight-showcases@0.2.0:
     resolution: {integrity: sha512-YWJuTqArkUdVJV85VKZJ0BvKCQRu1SKtH/Cr5t6G/oIfI4IptWc92E7BmiuNnpuQ2U7TczTRidCYurPrbgQQVA==}
     engines: {node: '>=18'}
     peerDependencies:
       '@astrojs/starlight': '>=0.23.0'
+
+  starlight-showcases@0.3.0:
+    resolution: {integrity: sha512-jxKVE5IM0TZgRIni4YK1oKDh6C9pBh94oj2pKuhzg2/Cg1wjCrWy39U3i1bXkh6rL+Ly+ypQBPH3AD9cP6TLXA==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      '@astrojs/starlight': '>=0.30.0'
 
   stream-replace-string@2.0.0:
     resolution: {integrity: sha512-TlnjJ1C0QrmxRNrON00JvaFFlNh5TTG00APw23j74ET7gkQpTASi6/L2fuiav8pzK715HXtUeClpBTw2NPSn6w==}
@@ -2852,11 +2851,11 @@ snapshots:
     dependencies:
       '@expressive-code/core': 0.40.2
 
-  '@hideoo/starlight-plugins-docs-components@0.2.2(@astrojs/starlight@0.33.0(astro@5.6.1(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3)))(astro@5.6.1(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3))':
+  '@hideoo/starlight-plugins-docs-components@0.4.0(@astrojs/starlight@0.33.0(astro@5.6.1(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3)))(astro@5.6.1(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3))':
     dependencies:
       '@astrojs/starlight': 0.33.0(astro@5.6.1(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3))
-      starlight-package-managers: 0.6.0(@astrojs/starlight@0.33.0(astro@5.6.1(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3)))(astro@5.6.1(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3))
-      starlight-showcases: 0.1.2(@astrojs/starlight@0.33.0(astro@5.6.1(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3)))(astro@5.6.1(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3))
+      starlight-package-managers: 0.8.1(@astrojs/starlight@0.33.0(astro@5.6.1(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3)))
+      starlight-showcases: 0.3.0(@astrojs/starlight@0.33.0(astro@5.6.1(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3)))(astro@5.6.1(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3))
     transitivePeerDependencies:
       - astro
 
@@ -3172,10 +3171,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@trueberryless-org/starlight-plugins-docs-components@0.2.2(@astrojs/starlight@0.33.0(astro@5.6.1(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3)))(astro@5.6.1(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3))':
+  '@trueberryless-org/starlight-plugins-docs-components@0.4.2(@astrojs/starlight@0.33.0(astro@5.6.1(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3)))(astro@5.6.1(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3))':
     dependencies:
       '@astrojs/starlight': 0.33.0(astro@5.6.1(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3))
-      '@hideoo/starlight-plugins-docs-components': 0.2.2(@astrojs/starlight@0.33.0(astro@5.6.1(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3)))(astro@5.6.1(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3))
+      '@hideoo/starlight-plugins-docs-components': 0.4.0(@astrojs/starlight@0.33.0(astro@5.6.1(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3)))(astro@5.6.1(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3))
       change-case: 5.4.4
       starlight-showcases: 0.2.0(@astrojs/starlight@0.33.0(astro@5.6.1(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3)))(astro@5.6.1(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3))
     transitivePeerDependencies:
@@ -5086,12 +5085,11 @@ snapshots:
 
   sprintf-js@1.0.3: {}
 
-  starlight-package-managers@0.6.0(@astrojs/starlight@0.33.0(astro@5.6.1(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3)))(astro@5.6.1(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3)):
+  starlight-package-managers@0.8.1(@astrojs/starlight@0.33.0(astro@5.6.1(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3))):
     dependencies:
       '@astrojs/starlight': 0.33.0(astro@5.6.1(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3))
-      astro: 5.6.1(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3)
 
-  starlight-showcases@0.1.2(@astrojs/starlight@0.33.0(astro@5.6.1(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3)))(astro@5.6.1(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3)):
+  starlight-showcases@0.2.0(@astrojs/starlight@0.33.0(astro@5.6.1(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3)))(astro@5.6.1(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3)):
     dependencies:
       '@astro-community/astro-embed-twitter': 0.5.8(astro@5.6.1(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3))
       '@astro-community/astro-embed-youtube': 0.5.6(astro@5.6.1(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3))
@@ -5099,7 +5097,7 @@ snapshots:
     transitivePeerDependencies:
       - astro
 
-  starlight-showcases@0.2.0(@astrojs/starlight@0.33.0(astro@5.6.1(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3)))(astro@5.6.1(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3)):
+  starlight-showcases@0.3.0(@astrojs/starlight@0.33.0(astro@5.6.1(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3)))(astro@5.6.1(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3)):
     dependencies:
       '@astro-community/astro-embed-twitter': 0.5.8(astro@5.6.1(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3))
       '@astro-community/astro-embed-youtube': 0.5.6(astro@5.6.1(jiti@2.4.2)(rollup@4.34.8)(typescript@5.6.3))
