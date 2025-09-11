@@ -19,7 +19,7 @@
     "./package.json": "./package.json"
   },
   "dependencies": {
-    "@11ty/eleventy-fetch": "^4.0.1"
+    "@11ty/eleventy-fetch": "^5.1.0"
   },
   "devDependencies": {
     "@astrojs/starlight": "^0.33.0",
