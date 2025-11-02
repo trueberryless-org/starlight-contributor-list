@@ -1,5 +1,11 @@
 # starlight-contributor-list
 
+## 0.3.1
+
+### Patch Changes
+
+- [#51](https://github.com/trueberryless-org/starlight-contributor-list/pull/51) [`57dc151`](https://github.com/trueberryless-org/starlight-contributor-list/commit/57dc15123e9f0132b29ce9e47e0fb8dc91f2be49) Thanks [@trueberryless-org](https://github.com/apps/trueberryless-org)! - Setups trusted publishing using OpenID Connect (OIDC) authentication — no code changes.
+
 ## 0.3.0
 
 ### Minor Changes
