@@ -3,6 +3,7 @@ import starlightPluginsDocsComponents from "@trueberryless-org/starlight-plugins
 import { defineConfig } from "astro/config";
 
 export default defineConfig({
+  site: "https://starlight-contributor-list.trueberryless.org",
   integrations: [
     starlight({
       title: "Starlight Contributor List",
