@@ -55,7 +55,7 @@ const { contributors } = Astro.props as Props;
       var(--avatar-row-margin) 0;
   }
 
-  .avatar-list li:focus-within {
+  .avatar-list li:has(:focus-visible) {
     z-index: 10;
     transform: scale(1.1);
   }
@@ -80,7 +80,7 @@ const { contributors } = Astro.props as Props;
     outline: 1px solid transparent;
   }
 
-  .avatar-list a:focus {
+  .avatar-list a:focus-visible {
     outline: 2px solid var(--sl-color-accent);
     outline-offset: var(--avatar-outline-offset);
   }
