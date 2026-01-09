@@ -1,5 +1,11 @@
 # starlight-contributor-list
 
+## 0.3.2
+
+### Patch Changes
+
+- [#60](https://github.com/trueberryless-org/starlight-contributor-list/pull/60) [`ad2c493`](https://github.com/trueberryless-org/starlight-contributor-list/commit/ad2c4933a3a049916d17d5fabba5f204fa8ac376) Thanks [@trueberryless](https://github.com/trueberryless)! - Fix keyboard focus accessibility issues.
+
 ## 0.3.1
 
 ### Patch Changes
