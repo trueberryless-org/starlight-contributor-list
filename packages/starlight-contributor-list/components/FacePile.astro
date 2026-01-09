@@ -46,6 +46,7 @@ const { contributors } = Astro.props as Props;
   }
 
   .avatar-list li {
+    positition: relative;
     --avatar-row-margin: calc(
       var(--avatar-outline-offset) + var(--avatar-outline-width) +
         var(--avatar-row-spacing) / 2
