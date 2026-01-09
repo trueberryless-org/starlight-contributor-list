@@ -41,17 +41,23 @@ const { contributors } = Astro.props as Props;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    padding: var(--avatar-border);
+    padding: 0rem;
     font-size: var(--avatar-size);
   }
 
   .avatar-list li {
+    position: relative;
     --avatar-row-margin: calc(
       var(--avatar-outline-offset) + var(--avatar-outline-width) +
         var(--avatar-row-spacing) / 2
     );
     margin: var(--avatar-row-margin) var(--avatar-overlap)
       var(--avatar-row-margin) 0;
+  }
+
+  .avatar-list li:has(:focus-visible) {
+    z-index: 10;
+    transform: scale(1.1);
   }
 
   .avatar-list img,
@@ -69,20 +75,13 @@ const { contributors } = Astro.props as Props;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    background-color: var(--theme-bg);
-    box-shadow:
-      0 0 0 var(--avatar-outline-width) var(--theme-divider),
-      0 0 0 var(--avatar-outline-offset) var(--theme-bg),
-      0 0 0 calc(var(--avatar-outline-offset) + var(--avatar-outline-width))
-        var(--theme-divider),
-      0 0 calc(var(--theme-glow-blur) + var(--avatar-outline-offset))
-        var(--theme-glow-diffuse);
+    background-color: var(--sl-color-accent);
     /* Indicates the contributor image boundaries for forced colors users, transparent is changed to a solid color */
     outline: 1px solid transparent;
   }
 
-  .avatar-list a:focus {
-    outline: 2px solid var(--theme-accent);
+  .avatar-list a:focus-visible {
+    outline: 2px solid var(--sl-color-accent);
     outline-offset: var(--avatar-outline-offset);
   }
 </style>
