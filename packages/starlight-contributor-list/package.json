@@ -22,8 +22,8 @@
     "@11ty/eleventy-fetch": "^4.0.1"
   },
   "devDependencies": {
-    "@astrojs/starlight": "^0.37.2",
-    "astro": "^5.16.8"
+    "@astrojs/starlight": "^0.37.3",
+    "astro": "^5.16.11"
   },
   "peerDependencies": {
     "@astrojs/starlight": ">=0.30"
