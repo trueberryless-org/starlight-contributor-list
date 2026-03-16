@@ -1,5 +1,15 @@
 # starlight-contributor-list
 
+## 0.4.0
+
+### Minor Changes
+
+- [`0d1841f`](https://github.com/trueberryless-org/starlight-contributor-list/commit/0d1841f3df224c12523384487a4f88fdc7950f45) Thanks [@trueberryless](https://github.com/trueberryless)! - Remove unnecessary dependencies, peer dependencies and dev dependencies
+
+### Patch Changes
+
+- [#66](https://github.com/trueberryless-org/starlight-contributor-list/pull/66) [`5014fc1`](https://github.com/trueberryless-org/starlight-contributor-list/commit/5014fc1506028ebbc6f6ea129c7d0a9965cb90ee) Thanks [@trueberryless](https://github.com/trueberryless)! - Fine tune package metadata
+
 ## 0.3.2
 
 ### Patch Changes
