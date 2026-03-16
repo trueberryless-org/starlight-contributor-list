@@ -1,6 +1,6 @@
 {
   "name": "starlight-contributor-list",
-  "version": "0.3.2",
+  "version": "0.4.0",
   "description": "Display a list of all contributors to your project",
   "keywords": [
     "starlight",
