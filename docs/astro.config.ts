@@ -3,10 +3,10 @@ import starlightPluginsDocsComponents from "@trueberryless-org/starlight-plugins
 import { defineConfig } from "astro/config";
 
 export default defineConfig({
-  site: "https://starlight-contributor-list.trueberryless.org",
+  site: "https://astro-contributors.trueberryless.org",
   integrations: [
     starlight({
-      title: "Starlight Contributor List",
+      title: "Astro Contributors",
       logo: {
         light: "./src/assets/logo-light.png",
         dark: "./src/assets/logo-dark.png",
@@ -14,7 +14,7 @@ export default defineConfig({
       },
       editLink: {
         baseUrl:
-          "https://github.com/trueberryless-org/starlight-contributor-list/edit/main/docs/",
+          "https://github.com/trueberryless-org/astro-contributors/edit/main/docs/",
       },
       customCss: ["./src/styles/custom.css"],
       sidebar: [
@@ -31,12 +31,12 @@ export default defineConfig({
         {
           icon: "github",
           label: "GitHub",
-          href: "https://github.com/trueberryless-org/starlight-contributor-list",
+          href: "https://github.com/trueberryless-org/astro-contributors",
         },
       ],
       plugins: [
         starlightPluginsDocsComponents({
-          pluginName: "starlight-contributor-list",
+          pluginName: "astro-contributors",
         }),
       ],
     }),
