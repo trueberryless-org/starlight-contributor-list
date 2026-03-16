@@ -1,5 +1,15 @@
 # astro-contributors
 
+## 0.7.0
+
+### Minor Changes
+
+- [#76](https://github.com/trueberryless-org/astro-contributors/pull/76) [`1b3a885`](https://github.com/trueberryless-org/astro-contributors/commit/1b3a885d7427c8be85e1ae53f161d92f04e44154) Thanks [@trueberryless](https://github.com/trueberryless)! - Adds support for Astro v6, drops support for Astro v5.
+
+  ⚠️ **BREAKING CHANGE:** The minimum supported version of Starlight is now `0.38.0`.
+
+  Please follow the [upgrade guide](https://github.com/withastro/starlight/releases/tag/%40astrojs%2Fstarlight%400.38.0) to update your project.
+
 ## 0.6.0
 
 ### Minor Changes
