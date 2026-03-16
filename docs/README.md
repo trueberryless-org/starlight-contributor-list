@@ -1,4 +1,4 @@
-# `starlight-contributor-list`
+# `astro-contributors`
 
 Display a list of all contributors to your project
 

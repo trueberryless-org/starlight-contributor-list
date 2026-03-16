@@ -1,13 +1,13 @@
 {
-  "name": "starlight-contributor-list-docs",
+  "name": "astro-contributors-docs",
   "version": "0.3.1",
   "private": true,
   "description": "Display a list of all contributors to your project",
-  "homepage": "https://starlight-contributor-list.trueberryless.org/",
-  "bugs": "https://github.com/trueberryless-org/starlight-contributor-list/issues",
+  "homepage": "https://astro-contributors.trueberryless.org/",
+  "bugs": "https://github.com/trueberryless-org/astro-contributors/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/trueberryless-org/starlight-contributor-list.git",
+    "url": "https://github.com/trueberryless-org/astro-contributors.git",
     "directory": "docs"
   },
   "license": "MIT",
@@ -25,7 +25,7 @@
     "@trueberryless-org/starlight-plugins-docs-components": "^0.4.3",
     "astro": "^5.16.8",
     "sharp": "^0.34.5",
-    "starlight-contributor-list": "workspace:*"
+    "astro-contributors": "workspace:*"
   },
   "packageManager": "pnpm@10.10.0",
   "engines": {

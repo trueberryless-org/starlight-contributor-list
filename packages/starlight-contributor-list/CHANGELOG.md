@@ -1,44 +1,44 @@
-# starlight-contributor-list
+# astro-contributors
 
 ## 0.4.0
 
 ### Minor Changes
 
-- [`0d1841f`](https://github.com/trueberryless-org/starlight-contributor-list/commit/0d1841f3df224c12523384487a4f88fdc7950f45) Thanks [@trueberryless](https://github.com/trueberryless)! - Remove unnecessary dependencies, peer dependencies and dev dependencies
+- [`0d1841f`](https://github.com/trueberryless-org/astro-contributors/commit/0d1841f3df224c12523384487a4f88fdc7950f45) Thanks [@trueberryless](https://github.com/trueberryless)! - Remove unnecessary dependencies, peer dependencies and dev dependencies
 
 ### Patch Changes
 
-- [#66](https://github.com/trueberryless-org/starlight-contributor-list/pull/66) [`5014fc1`](https://github.com/trueberryless-org/starlight-contributor-list/commit/5014fc1506028ebbc6f6ea129c7d0a9965cb90ee) Thanks [@trueberryless](https://github.com/trueberryless)! - Fine tune package metadata
+- [#66](https://github.com/trueberryless-org/astro-contributors/pull/66) [`5014fc1`](https://github.com/trueberryless-org/astro-contributors/commit/5014fc1506028ebbc6f6ea129c7d0a9965cb90ee) Thanks [@trueberryless](https://github.com/trueberryless)! - Fine tune package metadata
 
 ## 0.3.2
 
 ### Patch Changes
 
-- [#60](https://github.com/trueberryless-org/starlight-contributor-list/pull/60) [`ad2c493`](https://github.com/trueberryless-org/starlight-contributor-list/commit/ad2c4933a3a049916d17d5fabba5f204fa8ac376) Thanks [@trueberryless](https://github.com/trueberryless)! - Fix keyboard focus accessibility issues.
+- [#60](https://github.com/trueberryless-org/astro-contributors/pull/60) [`ad2c493`](https://github.com/trueberryless-org/astro-contributors/commit/ad2c4933a3a049916d17d5fabba5f204fa8ac376) Thanks [@trueberryless](https://github.com/trueberryless)! - Fix keyboard focus accessibility issues.
 
 ## 0.3.1
 
 ### Patch Changes
 
-- [#51](https://github.com/trueberryless-org/starlight-contributor-list/pull/51) [`57dc151`](https://github.com/trueberryless-org/starlight-contributor-list/commit/57dc15123e9f0132b29ce9e47e0fb8dc91f2be49) Thanks [@trueberryless-org](https://github.com/apps/trueberryless-org)! - Setups trusted publishing using OpenID Connect (OIDC) authentication — no code changes.
+- [#51](https://github.com/trueberryless-org/astro-contributors/pull/51) [`57dc151`](https://github.com/trueberryless-org/astro-contributors/commit/57dc15123e9f0132b29ce9e47e0fb8dc91f2be49) Thanks [@trueberryless-org](https://github.com/apps/trueberryless-org)! - Setups trusted publishing using OpenID Connect (OIDC) authentication — no code changes.
 
 ## 0.3.0
 
 ### Minor Changes
 
-- [#24](https://github.com/trueberryless-org/starlight-contributor-list/pull/24) [`368e54d`](https://github.com/trueberryless-org/starlight-contributor-list/commit/368e54d14c5277bbfce227f835715532bd5067c8) Thanks [@trueberryless](https://github.com/trueberryless)! - Add `ignore` parameter option
+- [#24](https://github.com/trueberryless-org/astro-contributors/pull/24) [`368e54d`](https://github.com/trueberryless-org/astro-contributors/commit/368e54d14c5277bbfce227f835715532bd5067c8) Thanks [@trueberryless](https://github.com/trueberryless)! - Add `ignore` parameter option
 
 ## 0.2.1
 
 ### Patch Changes
 
-- [#19](https://github.com/trueberryless-org/starlight-contributor-list/pull/19) [`4f439a3`](https://github.com/trueberryless-org/starlight-contributor-list/commit/4f439a38bed4c3bbdde1891c65c37066fa033363) Thanks [@trueberryless](https://github.com/trueberryless)! - Update to Starlight 0.32
+- [#19](https://github.com/trueberryless-org/astro-contributors/pull/19) [`4f439a3`](https://github.com/trueberryless-org/astro-contributors/commit/4f439a38bed4c3bbdde1891c65c37066fa033363) Thanks [@trueberryless](https://github.com/trueberryless)! - Update to Starlight 0.32
 
 ## 0.2.0
 
 ### Minor Changes
 
-- [#9](https://github.com/trueberryless-org/starlight-contributor-list/pull/9) [`128f46c`](https://github.com/trueberryless-org/starlight-contributor-list/commit/128f46cca2b8c98abade03e5a3dee64970b367ae) Thanks [@trueberryless](https://github.com/trueberryless)! - Adds support for Astro v5, drops support for Astro v4.
+- [#9](https://github.com/trueberryless-org/astro-contributors/pull/9) [`128f46c`](https://github.com/trueberryless-org/astro-contributors/commit/128f46cca2b8c98abade03e5a3dee64970b367ae) Thanks [@trueberryless](https://github.com/trueberryless)! - Adds support for Astro v5, drops support for Astro v4.
 
   ⚠️ **BREAKING CHANGE:** The minimum supported version of Starlight is now `0.30.0`.
 

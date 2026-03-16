@@ -1,4 +1,4 @@
-# `starlight-contributor-list`
+# `astro-contributors`
 
 Display a list of all contributors to your project
 
@@ -6,7 +6,7 @@ Display a list of all contributors to your project
 
 Want to get started immediately?
 
-Check out the `starlight-contributor-list` getting started guide.
+Check out the `astro-contributors` getting started guide.
 
 ## License
 
