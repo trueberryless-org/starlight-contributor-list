@@ -37,12 +37,12 @@ importers:
         version: 5.16.8(@types/node@25.0.3)(jiti@2.4.2)(rollup@4.55.1)(typescript@5.6.3)
       astro-contributors:
         specifier: workspace:*
-        version: link:../packages/starlight-contributor-list
+        version: link:../packages/astro-contributors
       sharp:
         specifier: ^0.34.5
         version: 0.34.5
 
-  packages/starlight-contributor-list:
+  packages/astro-contributors:
     dependencies:
       astro:
         specifier: ^5.0.0
