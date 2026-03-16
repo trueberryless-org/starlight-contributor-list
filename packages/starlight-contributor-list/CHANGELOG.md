@@ -1,5 +1,11 @@
 # astro-contributors
 
+## 0.6.0
+
+### Minor Changes
+
+- [#72](https://github.com/trueberryless-org/astro-contributors/pull/72) [`a914cce`](https://github.com/trueberryless-org/astro-contributors/commit/a914ccee5dee7c0e3efaa360e7ac304d9e445163) Thanks [@trueberryless](https://github.com/trueberryless)! - Introduce flexible focus color to allow better control in raw Astro sites.
+
 ## 0.5.0
 
 ### Minor Changes
