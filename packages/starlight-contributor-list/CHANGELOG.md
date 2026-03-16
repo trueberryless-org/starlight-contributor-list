@@ -1,5 +1,11 @@
 # astro-contributors
 
+## 0.5.0
+
+### Minor Changes
+
+- [#70](https://github.com/trueberryless-org/astro-contributors/pull/70) [`3788107`](https://github.com/trueberryless-org/astro-contributors/commit/37881073106047c17d1a17a87776244f322e7f40) Thanks [@trueberryless](https://github.com/trueberryless)! - Rename package from starlight-contributor-list to astro-contributors
+
 ## 0.4.0
 
 ### Minor Changes
