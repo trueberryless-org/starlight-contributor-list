@@ -2,29 +2,77 @@
 title: Parameters
 ---
 
+import Preview from "../../components/component-preview.astro";
+import { ContributorList } from "astro-contributors"
+
 The `ContributorList` component supports the following parameters:
 
 ## `githubRepo`
 
-**Type**: `${string}/${string}`  
-**Required** 
+**Type**: `${string}/${string}` <br />
+**Required**
 
 Define the GitHub repository to fetch contributors from in the format `owner/repo`.
 
 ```mdx
+import { ContributorList } from "astro-contributors"
+
 <ContributorList githubRepo="trueberryless-org/mutanuq" />
 ```
 
+<Preview>
+
+<ContributorList githubRepo="trueberryless-org/mutanuq" />
+
+</Preview>
+
 ## `ignore`
 
-**Type**: `string[]`  
-**Required** 
+**Type**: `string[]` <br />
+**Optional**
 
 An array of GitHub usernames to ignore when fetching contributors.
 This feature is very useful if you have a bot account that you don't want to display.
 
 ```mdx wrap
-<ContributorList githubRepo="trueberryless-org/mutanuq" ignore={["autofix-ci[bot]", "github-actions[bot]"]} />
+import { ContributorList } from "astro-contributors"
+
+<ContributorList githubRepo="trueberryless-org/mutanuq" ignore={["autofix-ci[bot]", "github-actions[bot]", "renovate[bot]"]} />
 ```
 
+<Preview>
+
+<ContributorList githubRepo="trueberryless-org/mutanuq" ignore={["autofix-ci[bot]", "github-actions[bot]", "renovate[bot]"]} />
+
+</Preview>
+
 See exactly these two examples in the [demo](/demo).
+
+## `focusColor`
+
+**Type**: `string` <br />
+**Optional**
+
+The accent color used for the avatar background and focus outlines. This can be any valid CSS color value (Hex, RGB, HSL, etc.).
+
+If not provided, the component will first check for a global CSS variable named `--avatar-focus-color`, then fall back to Starlight's `--sl-color-accent`, and finally default to a standard blue.
+
+```mdx
+import { ContributorList } from "astro-contributors"
+
+<ContributorList
+  githubRepo="trueberryless-org/mutanuq"
+  focusColor="#ff5733"
+/>
+```
+
+<Preview>
+
+<ContributorList
+    githubRepo="trueberryless-org/mutanuq"
+    focusColor="#ff5733"
+/>
+
+</Preview>
+
+You can notice the focus color, when you use keyboard navigation.

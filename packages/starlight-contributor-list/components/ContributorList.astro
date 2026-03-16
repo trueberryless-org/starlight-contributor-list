@@ -5,11 +5,16 @@ import FacePile from "./FacePile.astro";
 export interface Props {
   githubRepo?: `${string}/${string}`;
   ignore?: string[];
+  focusColor?: string;
 }
 
-const { githubRepo = "withastro/docs", ignore } = Astro.props as Props;
+const {
+  githubRepo = "withastro/docs",
+  ignore,
+  focusColor,
+} = Astro.props as Props;
 
 const contributors = await getAllContributors(githubRepo, ignore);
 ---
 
-<FacePile {contributors} />
+<FacePile {contributors} {focusColor} />
