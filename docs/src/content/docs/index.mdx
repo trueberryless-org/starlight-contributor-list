@@ -2,19 +2,26 @@
 title: Astro Contributors
 description: Display a list of all contributors to your project.
 head:
-    - tag: title
-      content: Astro Contributors
+  - tag: title
+    content: Astro Contributors
+  - tag: style
+    content: |
+      .hero-html {
+        --size: 12rem;
+        font-size: var(--size);
+        justify-content: center;
+        line-height: var(--size);
+      }
 template: splash
 editUrl: false
 hero:
-    tagline: Display a list of all contributors to your project.
-    image:
-        dark: ../../assets/big-logo-dark.png
-        light: ../../assets/big-logo-light.png
-    actions:
-        - text: Get Started
-          link: /getting-started/
-          icon: right-arrow
+  tagline: Display a list of all contributors to your project.
+  image:
+    html: '🦒'
+  actions:
+    - text: Get Started
+      link: /getting-started/
+      icon: right-arrow
 ---
 
 import { Card, CardGrid } from "@astrojs/starlight/components";
