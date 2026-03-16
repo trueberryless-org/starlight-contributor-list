@@ -23,7 +23,7 @@
   "dependencies": {
     "@astrojs/starlight": "^0.37.2",
     "@trueberryless-org/starlight-plugins-docs-components": "^0.4.3",
-    "astro": "^5.16.8",
+    "astro": "^6.0.5",
     "sharp": "^0.34.5",
     "astro-contributors": "workspace:*"
   },
