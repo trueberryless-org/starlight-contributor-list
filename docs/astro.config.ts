@@ -7,11 +7,6 @@ export default defineConfig({
   integrations: [
     starlight({
       title: "Astro Contributors",
-      logo: {
-        light: "./src/assets/logo-light.png",
-        dark: "./src/assets/logo-dark.png",
-        replacesTitle: true,
-      },
       editLink: {
         baseUrl:
           "https://github.com/trueberryless-org/astro-contributors/edit/main/docs/",
