@@ -20,11 +20,7 @@ export default defineConfig({
       sidebar: [
         {
           label: "Start Here",
-          items: [
-            { slug: "getting-started" },
-            { slug: "parameters" },
-            { slug: "demo" },
-          ],
+          items: [{ slug: "getting-started" }, { slug: "parameters" }],
         },
       ],
       social: [
