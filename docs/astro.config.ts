@@ -15,7 +15,11 @@ export default defineConfig({
       sidebar: [
         {
           label: "Start Here",
-          items: [{ slug: "getting-started" }, { slug: "parameters" }],
+          items: [
+            { slug: "getting-started" },
+            { slug: "parameters" },
+            { slug: "all-contributors" },
+          ],
         },
       ],
       social: [
