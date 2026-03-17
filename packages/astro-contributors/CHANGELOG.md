@@ -1,5 +1,11 @@
 # astro-contributors
 
+## 0.8.0
+
+### Minor Changes
+
+- [`64612b7`](https://github.com/trueberryless-org/astro-contributors/commit/64612b7348c6df8c29ed914c8afb20308b4c6389) Thanks [@trueberryless](https://github.com/trueberryless)! - Add support for All Contributors standard. Check out the [new component documentation](https://astro-contributors.trueberryless.org/all-contributors/) for details.
+
 ## 0.7.0
 
 ### Minor Changes
