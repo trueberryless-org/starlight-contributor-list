@@ -22,11 +22,19 @@ export function findAllContributorsRc(): AllContributorsRc | null {
 
     if (fs.existsSync(filePath)) {
       const content = fs.readFileSync(filePath, "utf-8");
-      return JSON.parse(content) as AllContributorsRc;
+      const parsed = JSON.parse(content) as unknown;
+      if (
+        typeof parsed === "object" &&
+        parsed !== null &&
+        Array.isArray((parsed as { contributors?: unknown }).contributors)
+      ) {
+        return parsed as AllContributorsRc;
+      }
+      return null;
     }
 
     const parentDir = path.dirname(currentDir);
-    if (parentDir === currentDir) break; // Reached the root directory
+    if (parentDir === currentDir) break;
     currentDir = parentDir;
   }
 
@@ -35,5 +43,5 @@ export function findAllContributorsRc(): AllContributorsRc | null {
 
 export function getAllContributorsFromRc(): RcContributor[] {
   const data = findAllContributorsRc();
-  return data?.contributors || [];
+  return Array.isArray(data?.contributors) ? data.contributors : [];
 }
