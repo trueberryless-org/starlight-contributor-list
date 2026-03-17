@@ -1,0 +1,183 @@
+---
+import { getAllContributorsFromRc } from "../libs/getAllContributorsRc";
+
+export interface Props {
+  focusColor?: string;
+  bgColor?: string;
+  borderColor?: string;
+  textColor?: string;
+  badgeBgColor?: string;
+  badgeTextColor?: string;
+}
+
+const {
+  focusColor,
+  bgColor,
+  borderColor,
+  textColor,
+  badgeBgColor,
+  badgeTextColor,
+} = Astro.props as Props;
+
+const styleOverride = {
+  ...(focusColor && { "--ac-focus-color": focusColor }),
+  ...(bgColor && { "--ac-bg-color": bgColor }),
+  ...(borderColor && { "--ac-border-color": borderColor }),
+  ...(textColor && { "--ac-text-color": textColor }),
+  ...(badgeBgColor && { "--ac-badge-bg-color": badgeBgColor }),
+  ...(badgeTextColor && { "--ac-badge-text-color": badgeTextColor }),
+};
+
+const contributors = getAllContributorsFromRc();
+
+const emojiMap: Record<string, string> = {
+  audio: "🔊",
+  a11y: "♿️",
+  bug: "🐛",
+  blog: "📝",
+  business: "💼",
+  code: "💻",
+  content: "🖋",
+  data: "🔣",
+  design: "🎨",
+  doc: "📖",
+  eventOrganizing: "📋",
+  example: "💡",
+  financial: "💵",
+  fundingFinding: "🔍",
+  ideas: "🤔",
+  infra: "🚇",
+  maintenance: "🚧",
+  mentoring: "🧑‍🏫",
+  platform: "📦",
+  plugin: "🔌",
+  projectManagement: "📆",
+  question: "💬",
+  research: "🔬",
+  review: "👀",
+  security: "🛡️",
+  tool: "🔧",
+  translation: "🌍",
+  test: "⚠️",
+  tutorial: "✅",
+  talk: "📢",
+  userTesting: "📓",
+  video: "📹",
+};
+---
+
+{
+  contributors.length > 0 ? (
+    <div
+      class="all-contributors-grid"
+      style={Object.keys(styleOverride).length > 0 ? styleOverride : undefined}
+    >
+      {contributors.map((contributor) => (
+        <a
+          href={contributor.profile}
+          class="contributor-card"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={contributor.avatar_url}
+            alt={contributor.name}
+            title={contributor.name}
+            width="64"
+            height="64"
+            loading="lazy"
+          />
+          <div class="contributor-info">
+            <span class="contributor-name">{contributor.name}</span>
+            <div class="contributor-badges">
+              {contributor.contributions.map((type) => (
+                <span class="badge" title={`Contribution: ${type}`}>
+                  {emojiMap[type] || "✨"}&nbsp;{type}
+                </span>
+              ))}
+            </div>
+          </div>
+        </a>
+      ))}
+    </div>
+  ) : (
+    <p>No .all-contributorsrc file found or no contributors listed.</p>
+  )
+}
+
+<style>
+  .all-contributors-grid {
+    --local-focus: var(--ac-focus-color, var(--sl-color-accent, #3b82f6));
+    --local-bg: var(--ac-bg-color, var(--sl-color-bg-nav, #f8f9fa));
+    --local-border: var(--ac-border-color, var(--sl-color-hairline, #e5e7eb));
+    --local-text: var(--ac-text-color, var(--sl-color-text, #111827));
+    --local-badge-bg: var(--ac-badge-bg-color, var(--sl-color-black, #1a1a1a));
+    --local-badge-text: var(
+      --ac-badge-text-color,
+      var(--sl-color-text, #ffffff)
+    );
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  .contributor-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.25rem 0.5rem;
+    border-radius: 0.5rem;
+    background: var(--local-bg);
+    border: 1px solid var(--local-border);
+    text-decoration: none;
+    color: var(--local-text);
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+
+  .contributor-card:hover,
+  .contributor-card:focus-visible {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    outline: 2px solid var(--local-focus);
+    outline-offset: 2px;
+  }
+
+  .contributor-card img {
+    border-radius: 50%;
+    margin-bottom: 0.75rem;
+    background-color: var(--local-border);
+    object-fit: cover;
+  }
+
+  .contributor-name {
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+  }
+
+  .contributor-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    justify-content: center;
+  }
+
+  .badge {
+    font-size: 0.7rem;
+    padding: 0.15rem 0.4rem;
+    border-radius: 0.25rem;
+    background: var(--local-badge-bg);
+    border: 1px solid var(--local-border);
+    color: var(--local-badge-text);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    text-transform: capitalize;
+  }
+</style>

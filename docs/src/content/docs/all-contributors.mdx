@@ -1,0 +1,111 @@
+---
+title: AllContributors
+description: Display contributors automatically from your .all-contributorsrc file.
+---
+
+import Preview from "../../components/component-preview.astro";
+import { AllContributors } from "astro-contributors"
+
+The `AllContributors` component automatically finds and parses the `.all-contributorsrc` file in your project directory and renders a responsive, accessible grid of contributor cards.
+
+Unlike the `ContributorList` component, `AllContributors` **requires no parameters**. It acts as a plug-and-play solution that inherits all configuration directly from your existing [All Contributors](https://allcontributors.org/en/) setup.
+
+## Usage
+
+Simply import the component and place it in your MDX file.
+
+```mdx
+import { AllContributors } from "astro-contributors"
+
+<AllContributors />
+```
+
+<Preview>
+
+<AllContributors />
+
+</Preview>
+
+## Requirements
+
+For this component to render successfully, you must have a valid `.all-contributorsrc` file located in your project root (or any parent directory relative to where Astro is running).
+
+The component automatically crawls up the directory tree to locate this file, so it works seamlessly even in monorepos. If the file is missing or contains no contributors, it will render a fallback message.
+
+## Styling
+
+The component outputs a CSS Grid that automatically adjusts the number of columns based on the screen width (minimum `140px` per card).
+
+Out of the box, the component automatically inherits your [Starlight](https://starlight.astro.build) theme variables for a native look and feel. However, you can override any of these colors using optional props. This is especially useful if you are using the component in a vanilla Astro project or want a completely custom look.
+
+All color props accept any valid CSS color value (Hex, RGB, HSL, etc.).
+
+### `bgColor`
+
+**Type**: `string` <br />
+**Optional**
+
+Overrides the background color of the individual contributor cards.
+
+### `borderColor`
+
+**Type**: `string` <br />
+**Optional**
+
+Overrides the border color of the contributor cards, the avatar background, and the badge borders.
+
+### `textColor`
+
+**Type**: `string` <br />
+**Optional**
+
+Overrides the primary text color used for the contributor's name.
+
+### `badgeBgColor`
+
+**Type**: `string` <br />
+**Optional**
+
+Overrides the background color of the contribution type badges.
+
+### `badgeTextColor`
+
+**Type**: `string` <br />
+**Optional**
+
+Overrides the text and emoji color inside the contribution type badges.
+
+### `focusColor`
+
+**Type**: `string` <br />
+**Optional**
+
+Overrides the accent color used for the hover state outline and focus rings.
+
+### Example with Custom Colors
+
+```mdx wrap
+import { AllContributors } from "astro-contributors"
+
+<AllContributors
+    bgColor="#1e1e1e"
+    borderColor="#333333"
+    textColor="#ffffff"
+    badgeBgColor="#ff5733"
+    badgeTextColor="#111111"
+    focusColor="#ff5733"
+/>
+````
+
+<Preview>
+
+<AllContributors
+    bgColor="#1e1e1e"
+    borderColor="#333333"
+    textColor="#ffffff"
+    badgeBgColor="#ff5733"
+    badgeTextColor="#111111"
+    focusColor="#ff5733"
+/>
+
+</Preview>

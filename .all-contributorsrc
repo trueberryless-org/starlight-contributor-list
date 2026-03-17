@@ -1,0 +1,80 @@
+{
+  "projectName": "astro-contributors",
+  "projectOwner": "trueberryless-org",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "commitConvention": "angular",
+  "contributors": [
+    {
+      "login": "trueberryless",
+      "name": "trueberryless",
+      "avatar_url": "https://github.com/trueberryless.png",
+      "profile": "https://github.com/trueberryless",
+      "contributions": [
+        "code",
+        "maintenance"
+      ]
+    },
+    {
+      "login": "github-actions[bot]",
+      "name": "github-actions[bot]",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?s=60&v=4",
+      "profile": "https://github.com/apps/github-actions",
+      "contributions": [
+        "maintenance",
+        "infra"
+      ]
+    },
+    {
+      "login": "trueberryless-org[bot]",
+      "name": "trueberryless-org[bot]",
+      "avatar_url": "https://avatars.githubusercontent.com/in/1100768?s=60&v=4",
+      "profile": "https://github.com/trueberryless-org",
+      "contributions": [
+        "maintenance"
+      ]
+    },
+    {
+      "login": "renovate[bot]",
+      "name": "renovate[bot]",
+      "avatar_url": "https://avatars.githubusercontent.com/in/2740?s=60&v=4",
+      "profile": "https://github.com/apps/renovate",
+      "contributions": [
+        "maintenance"
+      ]
+    },
+    {
+      "login": "autofix-ci[bot]",
+      "name": "autofix-ci[bot]",
+      "avatar_url": "https://avatars.githubusercontent.com/in/243519?s=60&v=4",
+      "profile": "https://github.com/apps/autofix-ci",
+      "contributions": [
+        "maintenance"
+      ]
+    },
+    {
+      "login": "coderabbitai[bot]",
+      "name": "coderabbitai[bot]",
+      "avatar_url": "https://avatars.githubusercontent.com/in/347564?s=60&v=4",
+      "profile": "https://github.com/apps/coderabbitai",
+      "contributions": [
+        "review"
+      ]
+    },
+    {
+      "login": "IEvangelist",
+      "name": "IEvangelist",
+      "avatar_url": "https://github.com/IEvangelist.png",
+      "profile": "https://github.com/IEvangelist",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7
+}
