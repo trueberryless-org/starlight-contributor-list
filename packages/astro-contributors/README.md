@@ -12,4 +12,4 @@ Check out the `astro-contributors` getting started guide.
 
 Licensed under the MIT license, Copyright © trueberryless.
 
-See [LICENSE](/LICENSE) for more information.
+See [LICENSE](https://github.com/trueberryless-org/astro-contributors/blob/main/LICENSE) for more information.
