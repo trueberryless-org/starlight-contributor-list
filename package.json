@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "description": "Display a list of all contributors to your project",
-  "homepage": "https://astro-contributors.trueberryless.org/",
+  "homepage": "https://github.com/trueberryless-org/astro-contributors",
   "bugs": {
     "url": "https://github.com/trueberryless-org/astro-contributors/issues"
   },
